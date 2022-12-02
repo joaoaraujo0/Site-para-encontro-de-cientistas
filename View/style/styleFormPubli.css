@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0ce94d;
+    
+    
+}
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d9f9;
+    padding: 1rem;
+    border-radius: 8px 0px 0px 8px;
+}
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	transition: .3s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(63, 63, 63);
+}
+
+.title > h1
+{
+    font-size: 1.5rem;
+}
+
+.inicio
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+option
+{
+    font-weight: 300;
+}
+
+
+.field:focus{
+    outline: 1px solid #6c63ff;
+}
+
+
+.form-image img 
+{
+    width: 30rem;
+}
+
+.form 
+{
+    border-radius: 0px 8px 8px 0px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.form-header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 100%;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box textarea
+{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 6px #0000001c;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.input-box textarea:focus
+{
+    border: 0 none;
+    outline: 1px solid #6c63ff;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+textarea
+{
+    height: 140px !important;
+    width: 100%;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.res
+{
+    margin-bottom: 1vh;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size:1rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 3vh;
+}
+
+.continue-button .btn1 {
+    width: 100%;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    height: 45px;
+}
+
+.continue-button .btn2 {
+    width: 100%;
+    border: 2px solid #6c63ff;
+    color: #6c63ff;
+    font-weight: 500;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn1:hover, .btn2:hover
+{
+    opacity: 80%;
+    transition: all 0.3s ease;
+}
